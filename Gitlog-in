@@ -14,9 +14,7 @@ def main():
     submit = driver.find_element_by_xpath('//*[@id="login"]/form/div[3]/input[4]')
     submit.click()
     time.sleep(2000)
-    search = driver.find_elements_by_xpath('/html/body/div[1]/header/div[3]/div/div/form/label/input[1]')
-    search.send_keys('"linkedin" OR Hadoop')
-    time.sleep(1000)
+    
     
 if __name__ == '__main__':
     main()
