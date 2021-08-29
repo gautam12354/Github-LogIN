@@ -31,15 +31,15 @@ driver.get('https://github.com/')
 sign_in = driver.find_element_by_xpath('/html/body/div[1]/header/div/div[2]/div[2]/a[1]')
 sign_in.click()
 userid = driver.find_element_by_id("login_field")
-userid.send_keys('***********')
+userid.send_keys('gautamk780@gmail.com')
 password = driver.find_element_by_xpath('//*[@id="password"]')
-password.send_keys('***********')
-submit = driver.find_element_by_xpath('//*[@id="login"]/form/div[3]/input[8]')  
-submit.click()
+password.send_keys('gitpygautam123')
+submit = driver.find_element_by_xpath('//*[@id="login"]/div[4]/form/input[14]')     
+submit.click() 
 time.sleep(5)
 
 #locate Search feild
-search = driver.find_element_by_name("q")
+search = driver.find_element_by_xpath('/html/body/div[1]/header/div[3]/div/div/form/label/input[1]')
 
 #type text here
 search.send_keys('"data analytics"')
